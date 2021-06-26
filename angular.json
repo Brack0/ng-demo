@@ -103,6 +103,37 @@
           }
         }
       }
+    },
+    "reusable-forms": {
+      "projectType": "library",
+      "root": "projects/reusable-forms",
+      "sourceRoot": "projects/reusable-forms/src",
+      "prefix": "rf",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/reusable-forms/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/reusable-forms/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/reusable-forms/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/reusable-forms/src/test.ts",
+            "tsConfig": "projects/reusable-forms/tsconfig.spec.json",
+            "karmaConfig": "projects/reusable-forms/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-demo"
