@@ -1,20 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'rf-reusable-forms',
-  template: `
-    <p>
-      reusable-forms works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './reusable-forms.component.html',
+  styleUrls: ['reusable-forms.component.scss'],
 })
-export class ReusableFormsComponent implements OnInit {
+export class ReusableFormsComponent {
+  constructor(private title: Title) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.title.setTitle('Reusable Forms - NgDemo');
   }
-
 }

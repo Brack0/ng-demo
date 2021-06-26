@@ -1,0 +1,10 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <rf-input-email formControlName="email"></rf-input-email>
+  <rf-input-password formControlName="password"></rf-input-password>
+  <rf-button type="submit" label="LOG IN" [disabled]="!loginForm.valid"></rf-button>
+
+  <div class="form-debug">
+    Status : {{ loginForm.status }}<br />
+    Value : {{ loginForm.value | json }}
+  </div>
+</form>
