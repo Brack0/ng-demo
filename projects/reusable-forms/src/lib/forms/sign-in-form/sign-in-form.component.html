@@ -1,0 +1,14 @@
+<form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+  <rf-input-email formControlName="email"></rf-input-email>
+  <rf-input-password formControlName="password"></rf-input-password>
+  <rf-input-password formControlName="confirmPassword" label="Confirm Password"></rf-input-password>
+  <ng-container *ngIf="signInForm.errors?.requiredIdenticalPassword && signInForm.get('confirmPassword')?.touched">
+    <div class="error">Passwords doesn't match</div>
+  </ng-container>
+  <rf-button type="submit" label="SIGN IN" [disabled]="!signInForm.valid"></rf-button>
+
+  <div class="form-debug">
+    Status : {{ signInForm.status }}<br />
+    Value : {{ signInForm.value | json }}
+  </div>
+</form>
