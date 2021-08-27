@@ -14,10 +14,8 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "reusable-forms": [
-        "dist/reusable-forms/reusable-forms",
-        "dist/reusable-forms"
-      ]
+      "core": ["dist/core/core", "dist/core"],
+      "reusable-forms": ["dist/reusable-forms/reusable-forms", "dist/reusable-forms"]
     },
     "target": "es2017",
     "module": "es2020",
