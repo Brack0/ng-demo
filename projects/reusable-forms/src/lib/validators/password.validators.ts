@@ -4,9 +4,7 @@ export const RequiredIdenticalPasswordValidator: ValidatorFn = (control: Abstrac
   const password = control.get('password');
   const confirmPassword = control.get('confirmPassword');
 
-  return password && confirmPassword && password.value !== confirmPassword.value
-    ? { requiredIdenticalPassword: true }
-    : null;
+  return password?.value !== confirmPassword?.value ? { requiredIdenticalPassword: true } : null;
 };
 
 export const PasswordStrengthValidator: ValidatorFn = (control: AbstractControl): ValidationErrors | null => {
