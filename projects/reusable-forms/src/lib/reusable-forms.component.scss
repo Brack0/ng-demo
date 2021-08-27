@@ -1,8 +1,10 @@
 :host {
   display: block;
+  padding-top: 80px;
   min-height: 100%;
   max-width: 100%;
   background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+  font: 16px / normal "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .grid {

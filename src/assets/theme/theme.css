@@ -1,0 +1,234 @@
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.ng-demo-serif{font-family:serif}.ng-demo-sans-serif{font-family:sans-serif}.ng-demo-cursive{font-family:cursive}.ng-demo-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.ng-demo-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.ng-demo-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.ng-demo-table,.ng-demo-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.ng-demo-table-all{border:1px solid #ccc}
+.ng-demo-bordered tr,.ng-demo-table-all tr{border-bottom:1px solid #ddd}.ng-demo-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.ng-demo-table-all tr:nth-child(odd){background-color:#fff}.ng-demo-table-all tr:nth-child(even){background-color:#f1f1f1}
+.ng-demo-hoverable tbody tr:hover,.ng-demo-ul.ng-demo-hoverable li:hover{background-color:#ccc}.ng-demo-centered tr th,.ng-demo-centered tr td{text-align:center}
+.ng-demo-table td,.ng-demo-table th,.ng-demo-table-all td,.ng-demo-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.ng-demo-table th:first-child,.ng-demo-table td:first-child,.ng-demo-table-all th:first-child,.ng-demo-table-all td:first-child{padding-left:16px}
+.ng-demo-btn,.ng-demo-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.ng-demo-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.ng-demo-btn,.ng-demo-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.ng-demo-disabled,.ng-demo-btn:disabled,.ng-demo-button:disabled{cursor:not-allowed;opacity:0.3}.ng-demo-disabled *,:disabled *{pointer-events:none}
+.ng-demo-btn.ng-demo-disabled:hover,.ng-demo-btn:disabled:hover{box-shadow:none}
+.ng-demo-badge,.ng-demo-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.ng-demo-badge{border-radius:50%}
+.ng-demo-ul{list-style-type:none;padding:0;margin:0}.ng-demo-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.ng-demo-ul li:last-child{border-bottom:none}
+.ng-demo-tooltip,.ng-demo-display-container{position:relative}.ng-demo-tooltip .ng-demo-text{display:none}.ng-demo-tooltip:hover .ng-demo-text{display:inline-block}
+.ng-demo-ripple:active{opacity:0.5}.ng-demo-ripple{transition:opacity 0s}
+.ng-demo-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.ng-demo-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.ng-demo-dropdown-click,.ng-demo-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.ng-demo-dropdown-hover:hover .ng-demo-dropdown-content{display:block}
+.ng-demo-dropdown-hover:first-child,.ng-demo-dropdown-click:hover{background-color:#ccc;color:#000}
+.ng-demo-dropdown-hover:hover > .ng-demo-button:first-child,.ng-demo-dropdown-click:hover > .ng-demo-button:first-child{background-color:#ccc;color:#000}
+.ng-demo-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.ng-demo-check,.ng-demo-radio{width:24px;height:24px;position:relative;top:6px}
+.ng-demo-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.ng-demo-bar-block .ng-demo-dropdown-hover,.ng-demo-bar-block .ng-demo-dropdown-click{width:100%}
+.ng-demo-bar-block .ng-demo-dropdown-hover .ng-demo-dropdown-content,.ng-demo-bar-block .ng-demo-dropdown-click .ng-demo-dropdown-content{min-width:100%}
+.ng-demo-bar-block .ng-demo-dropdown-hover .ng-demo-button,.ng-demo-bar-block .ng-demo-dropdown-click .ng-demo-button{width:100%;text-align:left;padding:8px 16px}
+.ng-demo-main,#main{transition:margin-left .4s}
+.ng-demo-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.ng-demo-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.ng-demo-bar{width:100%;overflow:hidden}.ng-demo-center .ng-demo-bar{display:inline-block;width:auto}
+.ng-demo-bar .ng-demo-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.ng-demo-bar .ng-demo-dropdown-hover,.ng-demo-bar .ng-demo-dropdown-click{position:static;float:left}
+.ng-demo-bar .ng-demo-button{white-space:normal}
+.ng-demo-bar-block .ng-demo-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.ng-demo-bar-block.ng-demo-center .ng-demo-bar-item{text-align:center}.ng-demo-block{display:block;width:100%}
+.ng-demo-responsive{display:block;overflow-x:auto}
+.ng-demo-container:after,.ng-demo-container:before,.ng-demo-panel:after,.ng-demo-panel:before,.ng-demo-row:after,.ng-demo-row:before,.ng-demo-row-padding:after,.ng-demo-row-padding:before,
+.ng-demo-cell-row:before,.ng-demo-cell-row:after,.ng-demo-clear:after,.ng-demo-clear:before,.ng-demo-bar:before,.ng-demo-bar:after{content:"";display:table;clear:both}
+.ng-demo-col,.ng-demo-half,.ng-demo-third,.ng-demo-twothird,.ng-demo-threequarter,.ng-demo-quarter{float:left;width:100%}
+.ng-demo-col.s1{width:8.33333%}.ng-demo-col.s2{width:16.66666%}.ng-demo-col.s3{width:24.99999%}.ng-demo-col.s4{width:33.33333%}
+.ng-demo-col.s5{width:41.66666%}.ng-demo-col.s6{width:49.99999%}.ng-demo-col.s7{width:58.33333%}.ng-demo-col.s8{width:66.66666%}
+.ng-demo-col.s9{width:74.99999%}.ng-demo-col.s10{width:83.33333%}.ng-demo-col.s11{width:91.66666%}.ng-demo-col.s12{width:99.99999%}
+@media (min-width:601px){.ng-demo-col.m1{width:8.33333%}.ng-demo-col.m2{width:16.66666%}.ng-demo-col.m3,.ng-demo-quarter{width:24.99999%}.ng-demo-col.m4,.ng-demo-third{width:33.33333%}
+.ng-demo-col.m5{width:41.66666%}.ng-demo-col.m6,.ng-demo-half{width:49.99999%}.ng-demo-col.m7{width:58.33333%}.ng-demo-col.m8,.ng-demo-twothird{width:66.66666%}
+.ng-demo-col.m9,.ng-demo-threequarter{width:74.99999%}.ng-demo-col.m10{width:83.33333%}.ng-demo-col.m11{width:91.66666%}.ng-demo-col.m12{width:99.99999%}}
+@media (min-width:993px){.ng-demo-col.l1{width:8.33333%}.ng-demo-col.l2{width:16.66666%}.ng-demo-col.l3{width:24.99999%}.ng-demo-col.l4{width:33.33333%}
+.ng-demo-col.l5{width:41.66666%}.ng-demo-col.l6{width:49.99999%}.ng-demo-col.l7{width:58.33333%}.ng-demo-col.l8{width:66.66666%}
+.ng-demo-col.l9{width:74.99999%}.ng-demo-col.l10{width:83.33333%}.ng-demo-col.l11{width:91.66666%}.ng-demo-col.l12{width:99.99999%}}
+.ng-demo-rest{overflow:hidden}.ng-demo-stretch{margin-left:-16px;margin-right:-16px}
+.ng-demo-content,.ng-demo-auto{margin-left:auto;margin-right:auto}.ng-demo-content{max-width:980px}.ng-demo-auto{max-width:1140px}
+.ng-demo-cell-row{display:table;width:100%}.ng-demo-cell{display:table-cell}
+.ng-demo-cell-top{vertical-align:top}.ng-demo-cell-middle{vertical-align:middle}.ng-demo-cell-bottom{vertical-align:bottom}
+.ng-demo-hide{display:none!important}.ng-demo-show-block,.ng-demo-show{display:block!important}.ng-demo-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.ng-demo-auto{max-width:95%}}
+@media (max-width:600px){.ng-demo-modal-content{margin:0 10px;width:auto!important}.ng-demo-modal{padding-top:30px}
+.ng-demo-dropdown-hover.ng-demo-mobile .ng-demo-dropdown-content,.ng-demo-dropdown-click.ng-demo-mobile .ng-demo-dropdown-content{position:relative}	
+.ng-demo-hide-small{display:none!important}.ng-demo-mobile{display:block;width:100%!important}.ng-demo-bar-item.ng-demo-mobile,.ng-demo-dropdown-hover.ng-demo-mobile,.ng-demo-dropdown-click.ng-demo-mobile{text-align:center}
+.ng-demo-dropdown-hover.ng-demo-mobile,.ng-demo-dropdown-hover.ng-demo-mobile .ng-demo-btn,.ng-demo-dropdown-hover.ng-demo-mobile .ng-demo-button,.ng-demo-dropdown-click.ng-demo-mobile,.ng-demo-dropdown-click.ng-demo-mobile .ng-demo-btn,.ng-demo-dropdown-click.ng-demo-mobile .ng-demo-button{width:100%}}
+@media (max-width:768px){.ng-demo-modal-content{width:500px}.ng-demo-modal{padding-top:50px}}
+@media (min-width:993px){.ng-demo-modal-content{width:900px}.ng-demo-hide-large{display:none!important}.ng-demo-sidebar.ng-demo-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.ng-demo-hide-medium{display:none!important}}
+@media (max-width:992px){.ng-demo-sidebar.ng-demo-collapse{display:none}.ng-demo-main{margin-left:0!important;margin-right:0!important}.ng-demo-auto{max-width:100%}}
+.ng-demo-top,.ng-demo-bottom{position:fixed;width:100%;z-index:1}.ng-demo-top{top:0}.ng-demo-bottom{bottom:0}
+.ng-demo-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.ng-demo-display-topleft{position:absolute;left:0;top:0}.ng-demo-display-topright{position:absolute;right:0;top:0}
+.ng-demo-display-bottomleft{position:absolute;left:0;bottom:0}.ng-demo-display-bottomright{position:absolute;right:0;bottom:0}
+.ng-demo-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.ng-demo-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.ng-demo-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.ng-demo-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.ng-demo-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.ng-demo-display-container:hover .ng-demo-display-hover{display:block}.ng-demo-display-container:hover span.ng-demo-display-hover{display:inline-block}.ng-demo-display-hover{display:none}
+.ng-demo-display-position{position:absolute}
+.ng-demo-circle{border-radius:50%}
+.ng-demo-round-small{border-radius:2px}.ng-demo-round,.ng-demo-round-medium{border-radius:4px}.ng-demo-round-large{border-radius:8px}.ng-demo-round-xlarge{border-radius:16px}.ng-demo-round-xxlarge{border-radius:32px}
+.ng-demo-row-padding,.ng-demo-row-padding>.ng-demo-half,.ng-demo-row-padding>.ng-demo-third,.ng-demo-row-padding>.ng-demo-twothird,.ng-demo-row-padding>.ng-demo-threequarter,.ng-demo-row-padding>.ng-demo-quarter,.ng-demo-row-padding>.ng-demo-col{padding:0 8px}
+.ng-demo-container,.ng-demo-panel{padding:0.01em 16px}.ng-demo-panel{margin-top:16px;margin-bottom:16px}
+.ng-demo-code,.ng-demo-codespan{font-family:Consolas,"courier new";font-size:16px}
+.ng-demo-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.ng-demo-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.ng-demo-card,.ng-demo-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.ng-demo-card-4,.ng-demo-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.ng-demo-spin{animation:ng-demo-spin 2s infinite linear}@keyframes ng-demo-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.ng-demo-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.ng-demo-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.ng-demo-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.ng-demo-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.ng-demo-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.ng-demo-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.ng-demo-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.ng-demo-animate-input{transition:width 0.4s ease-in-out}.ng-demo-animate-input:focus{width:100%!important}
+.ng-demo-opacity,.ng-demo-hover-opacity:hover{opacity:0.60}.ng-demo-opacity-off,.ng-demo-hover-opacity-off:hover{opacity:1}
+.ng-demo-opacity-max{opacity:0.25}.ng-demo-opacity-min{opacity:0.75}
+.ng-demo-greyscale-max,.ng-demo-grayscale-max,.ng-demo-hover-greyscale:hover,.ng-demo-hover-grayscale:hover{filter:grayscale(100%)}
+.ng-demo-greyscale,.ng-demo-grayscale{filter:grayscale(75%)}.ng-demo-greyscale-min,.ng-demo-grayscale-min{filter:grayscale(50%)}
+.ng-demo-sepia{filter:sepia(75%)}.ng-demo-sepia-max,.ng-demo-hover-sepia:hover{filter:sepia(100%)}.ng-demo-sepia-min{filter:sepia(50%)}
+.ng-demo-tiny{font-size:10px!important}.ng-demo-small{font-size:12px!important}.ng-demo-medium{font-size:15px!important}.ng-demo-large{font-size:18px!important}
+.ng-demo-xlarge{font-size:24px!important}.ng-demo-xxlarge{font-size:36px!important}.ng-demo-xxxlarge{font-size:48px!important}.ng-demo-jumbo{font-size:64px!important}
+.ng-demo-left-align{text-align:left!important}.ng-demo-right-align{text-align:right!important}.ng-demo-justify{text-align:justify!important}.ng-demo-center{text-align:center!important}
+.ng-demo-border-0{border:0!important}.ng-demo-border{border:1px solid #ccc!important}
+.ng-demo-border-top{border-top:1px solid #ccc!important}.ng-demo-border-bottom{border-bottom:1px solid #ccc!important}
+.ng-demo-border-left{border-left:1px solid #ccc!important}.ng-demo-border-right{border-right:1px solid #ccc!important}
+.ng-demo-topbar{border-top:6px solid #ccc!important}.ng-demo-bottombar{border-bottom:6px solid #ccc!important}
+.ng-demo-leftbar{border-left:6px solid #ccc!important}.ng-demo-rightbar{border-right:6px solid #ccc!important}
+.ng-demo-section,.ng-demo-code{margin-top:16px!important;margin-bottom:16px!important}
+.ng-demo-margin{margin:16px!important}.ng-demo-margin-top{margin-top:16px!important}.ng-demo-margin-bottom{margin-bottom:16px!important}
+.ng-demo-margin-left{margin-left:16px!important}.ng-demo-margin-right{margin-right:16px!important}
+.ng-demo-padding-small{padding:4px 8px!important}.ng-demo-padding{padding:8px 16px!important}.ng-demo-padding-large{padding:12px 24px!important}
+.ng-demo-padding-16{padding-top:16px!important;padding-bottom:16px!important}.ng-demo-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.ng-demo-padding-32{padding-top:32px!important;padding-bottom:32px!important}.ng-demo-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.ng-demo-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.ng-demo-padding-top-64{padding-top:64px!important}.ng-demo-padding-top-48{padding-top:48px!important}
+.ng-demo-padding-top-32{padding-top:32px!important}.ng-demo-padding-top-24{padding-top:24px!important}
+.ng-demo-left{float:left!important}.ng-demo-right{float:right!important}
+.ng-demo-button:hover{color:#000!important;background-color:#ccc!important}
+.ng-demo-transparent,.ng-demo-hover-none:hover{background-color:transparent!important}
+.ng-demo-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.ng-demo-amber,.ng-demo-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.ng-demo-aqua,.ng-demo-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.ng-demo-blue,.ng-demo-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.ng-demo-light-blue,.ng-demo-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.ng-demo-brown,.ng-demo-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.ng-demo-cyan,.ng-demo-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.ng-demo-blue-grey,.ng-demo-hover-blue-grey:hover,.ng-demo-blue-gray,.ng-demo-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.ng-demo-green,.ng-demo-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.ng-demo-light-green,.ng-demo-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.ng-demo-indigo,.ng-demo-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.ng-demo-khaki,.ng-demo-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.ng-demo-lime,.ng-demo-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.ng-demo-orange,.ng-demo-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.ng-demo-deep-orange,.ng-demo-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.ng-demo-pink,.ng-demo-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.ng-demo-purple,.ng-demo-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.ng-demo-deep-purple,.ng-demo-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.ng-demo-red,.ng-demo-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.ng-demo-sand,.ng-demo-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.ng-demo-teal,.ng-demo-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.ng-demo-yellow,.ng-demo-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.ng-demo-white,.ng-demo-hover-white:hover{color:#000!important;background-color:#fff!important}
+.ng-demo-black,.ng-demo-hover-black:hover{color:#fff!important;background-color:#000!important}
+.ng-demo-grey,.ng-demo-hover-grey:hover,.ng-demo-gray,.ng-demo-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.ng-demo-light-grey,.ng-demo-hover-light-grey:hover,.ng-demo-light-gray,.ng-demo-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.ng-demo-dark-grey,.ng-demo-hover-dark-grey:hover,.ng-demo-dark-gray,.ng-demo-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.ng-demo-pale-red,.ng-demo-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.ng-demo-pale-green,.ng-demo-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.ng-demo-pale-yellow,.ng-demo-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.ng-demo-pale-blue,.ng-demo-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.ng-demo-text-amber,.ng-demo-hover-text-amber:hover{color:#ffc107!important}
+.ng-demo-text-aqua,.ng-demo-hover-text-aqua:hover{color:#00ffff!important}
+.ng-demo-text-blue,.ng-demo-hover-text-blue:hover{color:#2196F3!important}
+.ng-demo-text-light-blue,.ng-demo-hover-text-light-blue:hover{color:#87CEEB!important}
+.ng-demo-text-brown,.ng-demo-hover-text-brown:hover{color:#795548!important}
+.ng-demo-text-cyan,.ng-demo-hover-text-cyan:hover{color:#00bcd4!important}
+.ng-demo-text-blue-grey,.ng-demo-hover-text-blue-grey:hover,.ng-demo-text-blue-gray,.ng-demo-hover-text-blue-gray:hover{color:#607d8b!important}
+.ng-demo-text-green,.ng-demo-hover-text-green:hover{color:#4CAF50!important}
+.ng-demo-text-light-green,.ng-demo-hover-text-light-green:hover{color:#8bc34a!important}
+.ng-demo-text-indigo,.ng-demo-hover-text-indigo:hover{color:#3f51b5!important}
+.ng-demo-text-khaki,.ng-demo-hover-text-khaki:hover{color:#b4aa50!important}
+.ng-demo-text-lime,.ng-demo-hover-text-lime:hover{color:#cddc39!important}
+.ng-demo-text-orange,.ng-demo-hover-text-orange:hover{color:#ff9800!important}
+.ng-demo-text-deep-orange,.ng-demo-hover-text-deep-orange:hover{color:#ff5722!important}
+.ng-demo-text-pink,.ng-demo-hover-text-pink:hover{color:#e91e63!important}
+.ng-demo-text-purple,.ng-demo-hover-text-purple:hover{color:#9c27b0!important}
+.ng-demo-text-deep-purple,.ng-demo-hover-text-deep-purple:hover{color:#673ab7!important}
+.ng-demo-text-red,.ng-demo-hover-text-red:hover{color:#f44336!important}
+.ng-demo-text-sand,.ng-demo-hover-text-sand:hover{color:#fdf5e6!important}
+.ng-demo-text-teal,.ng-demo-hover-text-teal:hover{color:#009688!important}
+.ng-demo-text-yellow,.ng-demo-hover-text-yellow:hover{color:#d2be0e!important}
+.ng-demo-text-white,.ng-demo-hover-text-white:hover{color:#fff!important}
+.ng-demo-text-black,.ng-demo-hover-text-black:hover{color:#000!important}
+.ng-demo-text-grey,.ng-demo-hover-text-grey:hover,.ng-demo-text-gray,.ng-demo-hover-text-gray:hover{color:#757575!important}
+.ng-demo-text-light-grey,.ng-demo-hover-text-light-grey:hover,.ng-demo-text-light-gray,.ng-demo-hover-text-light-gray:hover{color:#f1f1f1!important}
+.ng-demo-text-dark-grey,.ng-demo-hover-text-dark-grey:hover,.ng-demo-text-dark-gray,.ng-demo-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.ng-demo-border-amber,.ng-demo-hover-border-amber:hover{border-color:#ffc107!important}
+.ng-demo-border-aqua,.ng-demo-hover-border-aqua:hover{border-color:#00ffff!important}
+.ng-demo-border-blue,.ng-demo-hover-border-blue:hover{border-color:#2196F3!important}
+.ng-demo-border-light-blue,.ng-demo-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.ng-demo-border-brown,.ng-demo-hover-border-brown:hover{border-color:#795548!important}
+.ng-demo-border-cyan,.ng-demo-hover-border-cyan:hover{border-color:#00bcd4!important}
+.ng-demo-border-blue-grey,.ng-demo-hover-border-blue-grey:hover,.ng-demo-border-blue-gray,.ng-demo-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.ng-demo-border-green,.ng-demo-hover-border-green:hover{border-color:#4CAF50!important}
+.ng-demo-border-light-green,.ng-demo-hover-border-light-green:hover{border-color:#8bc34a!important}
+.ng-demo-border-indigo,.ng-demo-hover-border-indigo:hover{border-color:#3f51b5!important}
+.ng-demo-border-khaki,.ng-demo-hover-border-khaki:hover{border-color:#f0e68c!important}
+.ng-demo-border-lime,.ng-demo-hover-border-lime:hover{border-color:#cddc39!important}
+.ng-demo-border-orange,.ng-demo-hover-border-orange:hover{border-color:#ff9800!important}
+.ng-demo-border-deep-orange,.ng-demo-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.ng-demo-border-pink,.ng-demo-hover-border-pink:hover{border-color:#e91e63!important}
+.ng-demo-border-purple,.ng-demo-hover-border-purple:hover{border-color:#9c27b0!important}
+.ng-demo-border-deep-purple,.ng-demo-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.ng-demo-border-red,.ng-demo-hover-border-red:hover{border-color:#f44336!important}
+.ng-demo-border-sand,.ng-demo-hover-border-sand:hover{border-color:#fdf5e6!important}
+.ng-demo-border-teal,.ng-demo-hover-border-teal:hover{border-color:#009688!important}
+.ng-demo-border-yellow,.ng-demo-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.ng-demo-border-white,.ng-demo-hover-border-white:hover{border-color:#fff!important}
+.ng-demo-border-black,.ng-demo-hover-border-black:hover{border-color:#000!important}
+.ng-demo-border-grey,.ng-demo-hover-border-grey:hover,.ng-demo-border-gray,.ng-demo-hover-border-gray:hover{border-color:#9e9e9e!important}
+.ng-demo-border-light-grey,.ng-demo-hover-border-light-grey:hover,.ng-demo-border-light-gray,.ng-demo-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.ng-demo-border-dark-grey,.ng-demo-hover-border-dark-grey:hover,.ng-demo-border-dark-gray,.ng-demo-hover-border-dark-gray:hover{border-color:#616161!important}
+.ng-demo-border-pale-red,.ng-demo-hover-border-pale-red:hover{border-color:#ffe7e7!important}.ng-demo-border-pale-green,.ng-demo-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.ng-demo-border-pale-yellow,.ng-demo-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.ng-demo-border-pale-blue,.ng-demo-hover-border-pale-blue:hover{border-color:#e7ffff!important}
