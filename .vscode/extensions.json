@@ -1,3 +1,11 @@
 {
-  "recommendations": ["johnpapa.angular-essentials"]
+  "recommendations": [
+    "angular.ng-template",
+    "dbaeumer.vscode-eslint",
+    "mhutchie.git-graph",
+    "pkief.material-icon-theme",
+    "johnpapa.vscode-peacock",
+    "esbenp.prettier-vscode",
+    "johnpapa.winteriscoming"
+  ]
 }

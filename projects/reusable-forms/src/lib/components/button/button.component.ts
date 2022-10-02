@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 type ButtonType = 'submit' | 'reset' | 'button';
 
@@ -17,12 +17,10 @@ export class ButtonComponent {
   @Input()
   public disabled = false;
 
-  @Output()
-  public click = new EventEmitter();
-
   public onClick(event: Event): void {
-    if (!this.disabled) {
-      this.click.emit(event);
+    if (this.disabled) {
+      event.preventDefault();
+      event.stopPropagation();
     }
   }
 }

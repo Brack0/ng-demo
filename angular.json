@@ -8,9 +8,6 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
         }
       },
       "root": "",
@@ -132,6 +129,12 @@
             "tsConfig": "projects/reusable-forms/tsconfig.spec.json",
             "karmaConfig": "projects/reusable-forms/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/reusable-forms/**/*.ts", "projects/reusable-forms/**/*.html"]
+          }
         }
       }
     },
@@ -163,9 +166,17 @@
             "tsConfig": "projects/core/tsconfig.spec.json",
             "karmaConfig": "projects/core/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/core/**/*.ts", "projects/core/**/*.html"]
+          }
         }
       }
     }
   },
-  "defaultProject": "ng-demo"
+  "cli": {
+    "schematicCollections": ["@angular-eslint/schematics"]
+  }
 }

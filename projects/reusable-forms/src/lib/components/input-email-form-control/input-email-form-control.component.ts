@@ -1,4 +1,4 @@
-import { Component, forwardRef, Input } from '@angular/core';
+import { Component, forwardRef, Input, OnDestroy } from '@angular/core';
 import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { generateId } from '../../helper/id.helper';
@@ -15,7 +15,7 @@ import { generateId } from '../../helper/id.helper';
     },
   ],
 })
-export class InputEmailFormControlComponent implements ControlValueAccessor {
+export class InputEmailFormControlComponent implements ControlValueAccessor, OnDestroy {
   private subscription = new Subscription();
 
   @Input()
