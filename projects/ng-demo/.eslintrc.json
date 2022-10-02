@@ -5,7 +5,7 @@
     {
       "files": ["*.ts"],
       "parserOptions": {
-        "project": ["projects/core/tsconfig.lib.json", "projects/core/tsconfig.spec.json"],
+        "project": ["projects/ng-demo/tsconfig.app.json", "projects/ng-demo/tsconfig.spec.json"],
         "createDefaultProgram": true
       },
       "rules": {
@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "core",
+            "prefix": "ng-demo",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "core",
+            "prefix": "ng-demo",
             "style": "kebab-case"
           }
         ]
