@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './reusable-forms.component.html',
   styleUrls: ['reusable-forms.component.scss'],
 })
-export class ReusableFormsComponent {
+export class ReusableFormsComponent implements OnInit {
   constructor(private title: Title) {}
 
   ngOnInit() {

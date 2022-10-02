@@ -4,5 +4,7 @@
   "compilerOptions": {
     "declarationMap": false
   },
-  "angularCompilerOptions": { "enableIvy": true, "compilationMode": "full" }
+  "angularCompilerOptions": {
+    "compilationMode": "full"
+  }
 }
