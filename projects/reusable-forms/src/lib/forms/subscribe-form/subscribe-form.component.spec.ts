@@ -1,4 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ButtonComponent } from '../../components/button/button.component';
+import { InputEmailComponent } from '../../components/input-email/input-email.component';
+import { InputPasswordComponent } from '../../components/input-password/input-password.component';
 
 import { SubscribeFormComponent } from './subscribe-form.component';
 
@@ -8,7 +12,8 @@ describe('SubscribeFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SubscribeFormComponent],
+      declarations: [SubscribeFormComponent, InputEmailComponent, InputPasswordComponent, ButtonComponent],
+      imports: [FormsModule, ReactiveFormsModule],
     }).compileComponents();
   });
 
