@@ -1,0 +1,7 @@
+:host {
+    display: inline-block;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}

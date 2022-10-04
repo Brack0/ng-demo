@@ -5,7 +5,12 @@
     "baseUrl": "./",
     "paths": {
       "core": ["dist/core"],
-      "reusable-forms": ["dist/reusable-forms"]
+      "reusable-forms": [
+        "dist/reusable-forms"
+      ],
+      "treeshakable-svg": [
+        "dist/treeshakable-svg"
+      ]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

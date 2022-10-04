@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'reusable-forms',
     loadChildren: () => import('reusable-forms').then((m) => m.ReusableFormsModule),
   },
+  {
+    path: 'treeshakable-svg',
+    loadChildren: () => import('treeshakable-svg').then((m) => m.TreeshakableSvgModule),
+  },
 ];
 
 @NgModule({
