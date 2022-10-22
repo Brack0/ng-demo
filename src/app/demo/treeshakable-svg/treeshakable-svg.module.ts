@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CoreModule } from 'core';
+import { FooterComponent } from 'demo/shared';
 import { svgMinus, SvgModule, svgPlus } from 'treeshakable-svg';
 import { TreeshakableSvgComponent } from './treeshakable-svg.component';
 
@@ -21,8 +21,8 @@ import { TreeshakableSvgComponent } from './treeshakable-svg.component';
         ],
       },
     ]),
-    CoreModule,
     SvgModule.forRoot([svgMinus, svgPlus]),
+    FooterComponent,
   ],
 })
 export class TreeshakableSvgDemoModule {}

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --hmr --host 0.0.0.0 --disable-host-check",
-    "build": "ng build core && ng build ng-demo",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "generate:svgs": "svg-to-ts-files --config ./src/app/projects/treeshakable-svg/.svg-to-tsrc.json",
     "test": "ng test",

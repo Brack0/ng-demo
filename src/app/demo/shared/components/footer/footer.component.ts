@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'core-footer',
+  standalone: true,
+  selector: 'ng-demo-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CoreModule } from 'core';
+import { FooterComponent } from 'demo/shared';
 
 @Component({
   standalone: true,
   selector: 'ng-demo-home',
-  imports: [RouterModule, CoreModule],
+  imports: [RouterModule, FooterComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
