@@ -1,9 +1,0 @@
-<form [formGroup]="subscribeForm" (ngSubmit)="onSubmit()">
-  <rf-input-email formControlName="email"></rf-input-email>
-  <rf-button type="submit" label="SUBSCRIBE" [disabled]="!subscribeForm.valid"></rf-button>
-
-  <div class="form-debug">
-    Status : {{ subscribeForm.status }}<br />
-    Value : {{ subscribeForm.value | json }}
-  </div>
-</form>

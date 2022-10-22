@@ -4,13 +4,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "core": ["dist/core"],
-      "reusable-forms": [
-        "dist/reusable-forms"
-      ],
-      "treeshakable-svg": [
-        "dist/treeshakable-svg"
-      ]
+      "demo/shared": ["src/app/demo/shared"],
+      "reusable-forms": ["src/app/projects/reusable-forms/public-api"],
+      "treeshakable-svg": ["src/app/projects/treeshakable-svg/public-api"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
