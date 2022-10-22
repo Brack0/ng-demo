@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { svgArrowUp } from '../../svg';
-import { SvgModule } from '../../svg.module';
+import { svgArrowUp, SvgModule } from 'treeshakable-svg';
 import { LazyLoadSvgComponent } from './lazy-load-svg.component';
 
 @NgModule({

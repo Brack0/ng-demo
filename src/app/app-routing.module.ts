@@ -9,7 +9,8 @@ const routes: Routes = [
   },
   {
     path: 'treeshakable-svg',
-    loadChildren: () => import('treeshakable-svg').then((m) => m.TreeshakableSvgModule),
+    loadChildren: () =>
+      import('./demo/treeshakable-svg/treeshakable-svg.module').then((m) => m.TreeshakableSvgDemoModule),
   },
 ];
 

@@ -5,12 +5,8 @@
     "baseUrl": "./",
     "paths": {
       "core": ["dist/core"],
-      "reusable-forms": [
-        "dist/reusable-forms"
-      ],
-      "treeshakable-svg": [
-        "dist/treeshakable-svg"
-      ]
+      "reusable-forms": ["dist/reusable-forms"],
+      "treeshakable-svg": ["src/app/projects/treeshakable-svg/public-api"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

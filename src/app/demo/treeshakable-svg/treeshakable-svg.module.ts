@@ -2,8 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from 'core';
-import { svgMinus, svgPlus } from '../svg';
-import { SvgModule } from '../svg.module';
+import { svgMinus, SvgModule, svgPlus } from 'treeshakable-svg';
 import { TreeshakableSvgComponent } from './treeshakable-svg.component';
 
 @NgModule({
@@ -26,4 +25,4 @@ import { TreeshakableSvgComponent } from './treeshakable-svg.component';
     SvgModule.forRoot([svgMinus, svgPlus]),
   ],
 })
-export class TreeshakableSvgModule {}
+export class TreeshakableSvgDemoModule {}

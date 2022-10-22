@@ -5,9 +5,9 @@
     "ng": "ng",
     "start": "ng serve --hmr --host 0.0.0.0 --disable-host-check",
     "build": "ng build core && npm run build:libs && ng build ng-demo",
-    "build:libs": "ng build reusable-forms && ng build treeshakable-svg",
+    "build:libs": "ng build reusable-forms",
     "watch": "ng build --watch --configuration development",
-    "generate:svgs": "svg-to-ts-files --config ./projects/treeshakable-svg/.svg-to-tsrc.json",
+    "generate:svgs": "svg-to-ts-files --config ./src/app/projects/treeshakable-svg/.svg-to-tsrc.json",
     "test": "ng test",
     "test:ci": "ng test --no-watch --no-progress",
     "lint": "ng lint"

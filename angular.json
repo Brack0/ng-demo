@@ -174,43 +174,6 @@
           }
         }
       }
-    },
-    "treeshakable-svg": {
-      "projectType": "library",
-      "root": "projects/treeshakable-svg",
-      "sourceRoot": "projects/treeshakable-svg/src",
-      "prefix": "ts",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/treeshakable-svg/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/treeshakable-svg/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/treeshakable-svg/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/treeshakable-svg/src/test.ts",
-            "tsConfig": "projects/treeshakable-svg/tsconfig.spec.json",
-            "karmaConfig": "projects/treeshakable-svg/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": ["projects/treeshakable-svg/**/*.ts", "projects/treeshakable-svg/**/*.html"]
-          }
-        }
-      }
     }
   },
   "cli": {
