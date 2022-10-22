@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { PasswordStrengthValidator } from '../../validators/password.validators';
+import { PasswordStrengthValidator } from 'reusable-forms';
 
 interface LoginForm {
   email: FormControl<string>;

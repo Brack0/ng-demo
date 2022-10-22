@@ -3,32 +3,23 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from 'core';
-import { ButtonComponent } from './components/button/button.component';
-import { InputEmailFormControlComponent } from './components/input-email-form-control/input-email-form-control.component';
-import { InputEmailComponent } from './components/input-email/input-email.component';
-import { InputPasswordComponent } from './components/input-password/input-password.component';
+import { ButtonComponent } from 'demo/shared';
+import { ReusableFormsModule } from 'reusable-forms';
 import { LoginFormComponent } from './forms/login-form/login-form.component';
 import { SignInFormComponent } from './forms/sign-in-form/sign-in-form.component';
 import { SubscribeFormComponent } from './forms/subscribe-form/subscribe-form.component';
 import { ReusableFormsComponent } from './reusable-forms.component';
 
 @NgModule({
-  declarations: [
-    ReusableFormsComponent,
-    InputEmailComponent,
-    InputEmailFormControlComponent,
-    InputPasswordComponent,
-    LoginFormComponent,
-    SignInFormComponent,
-    SubscribeFormComponent,
-    ButtonComponent,
-  ],
+  declarations: [ReusableFormsComponent, LoginFormComponent, SignInFormComponent, SubscribeFormComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forChild([{ path: '', component: ReusableFormsComponent }]),
     CoreModule,
+    ButtonComponent,
+    ReusableFormsModule,
   ],
 })
-export class ReusableFormsModule {}
+export class ReusableFormsDemoModule {}

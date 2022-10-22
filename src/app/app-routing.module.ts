@@ -5,7 +5,7 @@ const routes: Routes = [
   { path: '', loadComponent: () => import('./demo/home/home.component').then((m) => m.HomeComponent) },
   {
     path: 'reusable-forms',
-    loadChildren: () => import('reusable-forms').then((m) => m.ReusableFormsModule),
+    loadChildren: () => import('./demo/reusable-forms/reusable-forms.module').then((m) => m.ReusableFormsDemoModule),
   },
   {
     path: 'treeshakable-svg',

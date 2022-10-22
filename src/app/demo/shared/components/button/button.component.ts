@@ -3,7 +3,8 @@ import { Component, Input } from '@angular/core';
 type ButtonType = 'submit' | 'reset' | 'button';
 
 @Component({
-  selector: 'rf-button',
+  standalone: true,
+  selector: 'ng-demo-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
 })

@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ButtonComponent } from '../../components/button/button.component';
-import { InputEmailComponent } from '../../components/input-email/input-email.component';
-import { InputPasswordComponent } from '../../components/input-password/input-password.component';
+import { ButtonComponent } from 'demo/shared';
+import { ReusableFormsModule } from 'reusable-forms';
 
 import { SignInFormComponent } from './sign-in-form.component';
 
@@ -12,8 +11,8 @@ describe('SignInFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SignInFormComponent, InputEmailComponent, InputPasswordComponent, ButtonComponent],
-      imports: [FormsModule, ReactiveFormsModule],
+      declarations: [SignInFormComponent],
+      imports: [FormsModule, ReactiveFormsModule, ReusableFormsModule, ButtonComponent],
     }).compileComponents();
   });
 

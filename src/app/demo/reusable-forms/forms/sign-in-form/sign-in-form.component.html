@@ -5,7 +5,7 @@
   <ng-container *ngIf="signInForm.errors?.['requiredIdenticalPassword'] && confirmPassword.touched">
     <div class="error">Passwords doesn't match</div>
   </ng-container>
-  <rf-button type="submit" label="SIGN IN" [disabled]="!signInForm.valid"></rf-button>
+  <ng-demo-button type="submit" label="SIGN IN" [disabled]="!signInForm.valid"></ng-demo-button>
 
   <div class="form-debug">
     Status : {{ signInForm.status }}<br />

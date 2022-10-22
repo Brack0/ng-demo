@@ -2,10 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { CoreModule } from 'core';
-import { ButtonComponent } from './components/button/button.component';
-import { InputEmailFormControlComponent } from './components/input-email-form-control/input-email-form-control.component';
-import { InputEmailComponent } from './components/input-email/input-email.component';
-import { InputPasswordComponent } from './components/input-password/input-password.component';
+import { ButtonComponent } from 'demo/shared';
+import { ReusableFormsModule } from 'reusable-forms';
 import { LoginFormComponent } from './forms/login-form/login-form.component';
 import { SignInFormComponent } from './forms/sign-in-form/sign-in-form.component';
 import { SubscribeFormComponent } from './forms/subscribe-form/subscribe-form.component';
@@ -18,17 +16,15 @@ describe('ReusableFormsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        ReusableFormsComponent,
-        InputEmailComponent,
-        InputEmailFormControlComponent,
-        InputPasswordComponent,
-        LoginFormComponent,
-        SignInFormComponent,
-        SubscribeFormComponent,
+      declarations: [ReusableFormsComponent, LoginFormComponent, SignInFormComponent, SubscribeFormComponent],
+      imports: [
+        FormsModule,
+        ReactiveFormsModule,
+        RouterTestingModule,
+        CoreModule,
+        ReusableFormsModule,
         ButtonComponent,
       ],
-      imports: [FormsModule, ReactiveFormsModule, RouterTestingModule, CoreModule],
     }).compileComponents();
   });
 
