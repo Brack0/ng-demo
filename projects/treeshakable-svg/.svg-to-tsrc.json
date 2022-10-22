@@ -1,0 +1,26 @@
+{
+  "delimiter": "KEBAB",
+  "typeName": "NgDemoSvg",
+  "prefix": "svg",
+  "interfaceName": "Svg",
+  "srcFiles": ["./projects/treeshakable-svg/src/assets/svg/*.svg"],
+  "outputDirectory": "./projects/treeshakable-svg/src/lib/svg",
+  "modelFileName": "svg.model",
+  "iconsFolderName": "icons",
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "removeElementsByAttr",
+        "params": {
+          "class": "preview"
+        }
+      },
+      {
+        "name": "prefixIds",
+        "params": {
+          "prefix": "svg"
+        }
+      }
+    ]
+  }
+}
