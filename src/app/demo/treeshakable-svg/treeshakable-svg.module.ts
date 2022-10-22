@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FooterComponent } from 'demo/shared';
+import { ButtonComponent, FooterComponent } from 'demo/shared';
 import { svgMinus, SvgModule, svgPlus } from 'treeshakable-svg';
 import { TreeshakableSvgComponent } from './treeshakable-svg.component';
 
@@ -15,7 +15,7 @@ import { TreeshakableSvgComponent } from './treeshakable-svg.component';
         component: TreeshakableSvgComponent,
         children: [
           {
-            path: '',
+            path: 'lazy',
             loadChildren: () => import('./lazy-load-svg/lazy-load-svg.module').then((m) => m.LazyLoadSvgModule),
           },
         ],
@@ -23,6 +23,7 @@ import { TreeshakableSvgComponent } from './treeshakable-svg.component';
     ]),
     SvgModule.forRoot([svgMinus, svgPlus]),
     FooterComponent,
+    ButtonComponent,
   ],
 })
 export class TreeshakableSvgDemoModule {}

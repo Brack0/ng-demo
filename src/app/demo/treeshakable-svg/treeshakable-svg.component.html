@@ -13,18 +13,14 @@
     <div class="card-title">Plus SVG</div>
     <ts-svg [name]="'plus'" class="svg"></ts-svg>
   </div>
-
-  <div class="card">
-    <div class="card-title">Plus SVG</div>
-    <ts-svg [name]="'plus'" class="svg"></ts-svg>
-  </div>
-</div>
-
-<div class="grid">
   <div class="card">
     <div class="card-title">Minus SVG</div>
     <ts-svg [name]="'minus'" class="svg"></ts-svg>
   </div>
+</div>
+
+<div class="grid">
+  <ng-demo-button [routerLink]="'lazy'" label="Show more"></ng-demo-button>
 </div>
 
 <router-outlet></router-outlet>
