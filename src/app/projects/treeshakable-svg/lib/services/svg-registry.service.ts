@@ -8,6 +8,7 @@ import { NgDemoSvg, Svg } from '../svg';
  */
 type SvgRegistry = Partial<Record<NgDemoSvg, Svg>>;
 
+// eslint-disable-next-line @angular-eslint/use-injectable-provided-in
 @Injectable()
 export class SvgRegistryService {
   private registry = new BehaviorSubject<SvgRegistry>({});

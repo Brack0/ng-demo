@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from 'demo/shared';
 
@@ -8,6 +8,7 @@ import { FooterComponent } from 'demo/shared';
   imports: [RouterModule, FooterComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
   title = 'ng-demo';

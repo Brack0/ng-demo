@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { PasswordStrengthValidator, RequiredIdenticalPasswordValidator } from 'reusable-forms';
 
@@ -12,6 +12,7 @@ interface SignInForm {
   selector: 'rf-sign-in-form',
   templateUrl: './sign-in-form.component.html',
   styleUrls: ['./sign-in-form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SignInFormComponent {
   public signInForm = new FormGroup<SignInForm>(

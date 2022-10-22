@@ -19,6 +19,7 @@ describe('SvgRegistryService', () => {
         { name: 'svg2', data: '<svg>2</svg>' },
         { name: 'svg3', data: '<svg>3</svg>' },
       ] as unknown as Svg[]);
+      // eslint-disable-next-line @typescript-eslint/dot-notation
       svgRegistryService['registry'].subscribe((registry) => {
         expect(registry as unknown).toEqual({
           svg1: {

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 type ButtonType = 'submit' | 'reset' | 'button';
 
@@ -7,6 +7,7 @@ type ButtonType = 'submit' | 'reset' | 'button';
   selector: 'ng-demo-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {
   @Input()

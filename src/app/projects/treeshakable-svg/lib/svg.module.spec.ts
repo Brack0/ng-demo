@@ -9,6 +9,7 @@ import { SvgRegistryService } from './services/svg-registry.service';
 import { Svg } from './svg';
 import { SvgModule } from './svg.module';
 
+// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection, @angular-eslint/use-component-selector
 @Component({ template: "{{'test' }}" })
 class TestComponent {}
 
@@ -51,9 +52,9 @@ class SvgImportedModule {}
 
 @NgModule({
   imports: [
-    TestModule,
-    SvgModule.forChild([{ name: 'svg3', data: '<svg>3</svg>' }] as unknown as Svg[]),
     SvgImportedModule,
+    SvgModule.forChild([{ name: 'svg3', data: '<svg>3</svg>' }] as unknown as Svg[]),
+    TestModule,
     RouterModule.forChild([{ path: '', component: TestComponent }]),
   ],
 })
