@@ -1,4 +1,4 @@
-import { Component, forwardRef, Input, OnDestroy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, forwardRef, Input, OnDestroy } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { generateId } from '../../helper/id.helper';
@@ -10,18 +10,20 @@ import { generateId } from '../../helper/id.helper';
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
+      // eslint-disable-next-line @angular-eslint/no-forward-ref
       useExisting: forwardRef(() => InputPasswordComponent),
       multi: true,
     },
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InputPasswordComponent implements ControlValueAccessor, OnDestroy {
   private subscription = new Subscription();
 
   @Input()
-  public label: string = 'Password';
+  public label = 'Password';
 
-  public password: string = '';
+  public password = '';
   public id = generateId('password');
 
   onChange: any = () => {};

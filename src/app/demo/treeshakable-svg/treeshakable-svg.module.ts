@@ -8,7 +8,7 @@ import { TreeshakableSvgComponent } from './treeshakable-svg.component';
 @NgModule({
   declarations: [TreeshakableSvgComponent],
   imports: [
-    CommonModule,
+    ButtonComponent,
     RouterModule.forChild([
       {
         path: '',
@@ -22,8 +22,8 @@ import { TreeshakableSvgComponent } from './treeshakable-svg.component';
       },
     ]),
     SvgModule.forRoot([svgMinus, svgPlus]),
+    CommonModule,
     FooterComponent,
-    ButtonComponent,
   ],
 })
 export class TreeshakableSvgDemoModule {}

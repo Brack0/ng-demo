@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { PasswordStrengthValidator } from 'reusable-forms';
 
@@ -11,6 +11,7 @@ interface LoginForm {
   selector: 'rf-login-form',
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoginFormComponent {
   public loginForm = new FormGroup<LoginForm>({

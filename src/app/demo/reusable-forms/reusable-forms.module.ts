@@ -10,14 +10,14 @@ import { SubscribeFormComponent } from './forms/subscribe-form/subscribe-form.co
 import { ReusableFormsComponent } from './reusable-forms.component';
 
 @NgModule({
-  declarations: [ReusableFormsComponent, LoginFormComponent, SignInFormComponent, SubscribeFormComponent],
+  declarations: [LoginFormComponent, ReusableFormsComponent, SignInFormComponent, SubscribeFormComponent],
   imports: [
+    ButtonComponent,
     CommonModule,
+    FooterComponent,
+    RouterModule.forChild([{ path: '', component: ReusableFormsComponent }]),
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forChild([{ path: '', component: ReusableFormsComponent }]),
-    ButtonComponent,
-    FooterComponent,
     ReusableFormsModule,
   ],
 })

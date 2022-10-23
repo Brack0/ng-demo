@@ -1,17 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { Inject, InjectionToken, ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
+import type { ModuleWithProviders } from '@angular/core';
+import { Inject, InjectionToken, NgModule, Optional, SkipSelf } from '@angular/core';
 import { SvgSymbolsComponent } from './components/svg-symbols/svg-symbols.component';
 import { SvgComponent } from './components/svg/svg.component';
 import { SvgRegistryService } from './services/svg-registry.service';
-import { Svg } from './svg';
+import type { Svg } from './svg';
 
 export const SVG_FORROOT_GUARD = new InjectionToken<void>('SVG_FORROOT_GUARD');
 export const SVGS = new InjectionToken<Svg[][]>('SVGS');
 
 @NgModule({
   imports: [CommonModule],
-  exports: [SvgSymbolsComponent, SvgComponent],
-  declarations: [SvgSymbolsComponent, SvgComponent],
+  exports: [SvgComponent, SvgSymbolsComponent],
+  declarations: [SvgComponent, SvgSymbolsComponent],
 })
 export class SvgModule {
   constructor(
@@ -77,7 +78,7 @@ export class SvgModule {
 /**
  * Prevent duplicate SvgModule.forRoot() call in the app
  */
-export function provideForRootGuard(svgRegistryService: SvgRegistryService): string {
+export function provideForRootGuard(svgRegistryService?: SvgRegistryService): string {
   if (svgRegistryService) {
     throw new Error(
       `SvgModule.forRoot() called twice. Submodules and lazy-loaded submodules should use SvgModule.forChild() instead.`
